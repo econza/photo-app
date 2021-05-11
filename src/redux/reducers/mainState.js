@@ -1,7 +1,9 @@
-import { GET_IMAGES } from '../actions'
+import { GET_IMAGES, SET_IMG_ID, SET_IMAGE_INFO } from '../actions'
 
 let initialState = {
-    images: []
+    images: [],
+    imageInfo: null,
+    seletedId: null,
 };
 
 const imagesState = (state = initialState, action) => {
@@ -11,10 +13,19 @@ const imagesState = (state = initialState, action) => {
                 ...state,
                 images: action.images
             };
+        case SET_IMG_ID:
+            return {
+                ...state,
+                seletedId: action.seletedId,
+            }
+        case SET_IMAGE_INFO:
+            return {
+                ...state,
+                imageInfo: action.imageInfo
+            }
         default:
             return state;
     };
 };
 
 export default imagesState;
-
