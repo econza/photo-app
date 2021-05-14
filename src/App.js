@@ -1,4 +1,4 @@
-import './App.css';
+import styles from './App.module.css';
 import React from 'react';
 import Header from './components/header/header.js';
 import Footer from './components/footer/Footer';
@@ -7,7 +7,7 @@ import MainPage from './pages/MainPage/MainPage';
 
 const App = () => {
   return (
-    <div className="mainWrapper">
+    <div className={styles.mainWrapper}>
       <Header />
         <MainPage />
       <Footer />
