@@ -1,0 +1,5 @@
+{
+    "name": "ModalPage",
+    "private": true,
+    "main": "./ModalPage.js"
+}
