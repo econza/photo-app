@@ -1,6 +1,5 @@
 import React from 'react';
-
-import "./Modal.css";
+import styles from "./Modal.module.css";
 
 const Modal = ({
     isModalVisible,
@@ -28,15 +27,15 @@ const Modal = ({
 
     // или возвращаем верстку модального окна
     return (
-        <div className='modal' onClick={onClose}>
-            <div className='modal-dialog' onClick={e => e.stopPropagation()}>
+        <div className={styles.modal} onClick={onClose}>
+            <div className={styles.modal_dialog} onClick={e => e.stopPropagation()}>
                 
-                    <span className='modal-close' onClick={onClose}>
+                    <span className={styles.modal_close} onClick={onClose}>
                         &times;
                     </span>
                 
-                <div className='modal-body'>
-                    <div className='modal-content'>
+                <div className={styles.modal_body}>
+                    <div className={styles.modal_content}>
                         <React.Fragment>
                             {children}
                         </React.Fragment>

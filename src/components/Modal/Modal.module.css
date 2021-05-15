@@ -14,14 +14,12 @@
     animation-duration: 300ms;
   }
   
-  .modal-dialog {
+  .modal_dialog {
     width: 100%;
     max-width: 620px;
     background: white;
     position: relative;
     margin: 0 20px;
-    /* max-height: calc(100vh - 40px); */
-    /* height: 425px; */
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -38,18 +36,15 @@
     border-top: 1px solid #dbdbdb;
     justify-content: flex-end;
   }
-  .modal-close {
+  .modal_close {
     cursor: pointer;
     padding: 1rem;
     margin: -1rem -8px -1rem auto;
     font-size: 25px;
   }
-  .modal-body {
+  .modal_body {
     overflow: auto;
   }
-  /* .modal-content {
-    padding: 1rem;
-  } */
   
   .modal-title {
     margin: 0;
@@ -72,10 +67,8 @@
     }
   }
 
-
-
   @media (max-width: 500px) { 
-  .modal-dialog {
+  .modal_dialog {
     width: 100%;
     max-width: 620px;
     background: white;
@@ -93,12 +86,10 @@
     animation-duration: 0.5s;
   }
 
-  .modal-close {
+  .modal_close {
     position: absolute;
     cursor: pointer;
     padding: 0px;
-  
-
     top: 10px; 
     right: 10px;
     bottom: 1rem;

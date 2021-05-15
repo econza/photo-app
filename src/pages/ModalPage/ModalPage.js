@@ -5,8 +5,8 @@ import { setImageInfo } from '../../redux/actions'
 
 import Modal from '../../components/Modal'
 import styles from './ModalPage.module.css'
+import { formatDate } from '../../helpers/formatDate'
 
-const formatDate = (timestamp) => new Date(timestamp).toLocaleDateString("ru-RU")
 
 const ModalPage = (props) => {
     const imageInfo = useSelector(state => state.imagesState.imageInfo)
