@@ -1,7 +1,7 @@
 import { createStore, combineReducers } from "redux";
 import { composeWithDevTools } from 'redux-devtools-extension';
 
-import imagesState from "../redux/reducers/mainState"
+import imagesState from "../redux/reducers/imagesState"
 
 
 let reducers = combineReducers({

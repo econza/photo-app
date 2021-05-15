@@ -1,8 +1,8 @@
-import style from "./MainContent.module.css";
 import React, { useEffect } from 'react';
 import { getImages } from "../../redux/actions";
 import { useDispatch, useSelector } from 'react-redux';
 import Modal from '../modal/Modal'
+import styles from "./MainContent.module.css";
 
 
 const MainContent = () => {
@@ -10,8 +10,6 @@ const MainContent = () => {
     const onClose = () => setModal(false)
 
     const images = useSelector(state => state.imagesState.images);
-
-    console.log("RFHNY", images)
 
     const dispatch = useDispatch();
 
@@ -27,7 +25,7 @@ const MainContent = () => {
             <React.Fragment>
                 {images.map((images, url) => {
                     return (
-                        <div className={style.imgWrapper}>
+                        <div className={styles.imgWrapper}>
                             <img src={images.url} onClick={() => setModal(true)} />
                         </div>)
                 })}

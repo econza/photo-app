@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { getImages, setImgId, setImageInfo } from "../../redux/actions";
 import { useDispatch, useSelector } from 'react-redux';
 import ModalPage from '../ModalPage'
-import style from "./MainPage.module.css";
+import styles from "./MainPage.module.css";
 
 const MainPage = () => {
     const images = useSelector(state => state.imagesState.images);
@@ -25,7 +25,7 @@ const MainPage = () => {
 
     return (
 
-        <div className={style.imgWrapper}>
+        <div className={styles.imgWrapper}>
             <React.Fragment>
                 {images.map((image) => {
                     return (
