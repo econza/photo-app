@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
 import { setImageInfo } from '../../redux/actions'
-
 import Modal from '../../components/Modal'
 import styles from './ModalPage.module.css'
 import { formatDate } from '../../helpers/formatDate'
@@ -24,22 +22,19 @@ const ModalPage = (props) => {
         <Modal {...props}>
             <div className={styles.modalWrapper}>
                 <div className={styles.imageInfoWrapper}>
-                    <img src={imageInfo?.url}></img>
+                    <img className={styles.modalImage} src={imageInfo?.url} alt=""></img>
                 </div>
                 <div className={styles.commentsWrapper}>
                     {imageInfo?.comments.map((item) => (
                         <div key={item.id}>
                             <div className={styles.dateContainer}>{formatDate(item.date)}</div>
                             <div className={styles.commentText}>{item.text}</div>
-                        </div> 
+                        </div>
                     ))}
                 </div>
-                <div className={styles.inputsWrapper}>
-                    <input placeholder={"   Ваше Имя"}/>
-                    <input placeholder={"   Ваш комментарий"}/>
-                    <button>Оставить комментарий</button>
-                
-                </div>
+                <input className={styles.modalInput} placeholder={"   Ваше Имя"} />
+                <input className={styles.modalInput} placeholder={"   Ваш комментарий"} />
+                <button className={styles.modalButton}> Оставить комментарий</button>
             </div>
         </Modal>
     )

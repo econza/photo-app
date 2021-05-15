@@ -4,7 +4,7 @@
     flex-wrap: wrap;
 }
 
-.modalWrapper .imageInfoWrapper img {
+.modalImage {
     width: 330px;
     height: 200px;
     margin-top: 0px;
@@ -13,18 +13,16 @@
     margin-left: 30px;
 }
 
-.modalWrapper .inputsWrapper  input {
+.modalInput {
     width: 330px;
     height: 30px;
     margin-top: 0px;
     margin-right: 15px;
     margin-bottom: 20px;
     margin-left: 30px;
-
     border: 1px solid #CCCCCC;
     box-sizing: border-box;
     border-radius: 3px;
-
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -33,7 +31,7 @@
     color: #CCCCCC;
 }
 
-.modalWrapper .inputsWrapper  button {
+.modalButton {
     width: 330px;
     height: 30px;
     margin-top: 0px;
@@ -76,19 +74,17 @@
     margin-bottom: 20px;
 }
 
-@media (max-width: 500px) { 
+@media (max-width: 500px) {
     .modalWrapper {
         display: flex;
         flex-direction: column;
     }
-
     .imageInfoWrapper {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .modalWrapper .imageInfoWrapper img {
+    .modalImage {
         width: 100%;
         height: auto;
         margin-top: 0px;
@@ -96,17 +92,14 @@
         margin-bottom: 20px;
         margin-left: 0px;
     }
-
-    .modalWrapper .inputsWrapper input {
+    .modalInput {
         max-width: auto;
         height: 30px;
         margin-left: 20px;
         width: 90%;
-    
         border: 1px solid #CCCCCC;
         box-sizing: border-box;
         border-radius: 3px;
-    
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -114,8 +107,7 @@
         line-height: 15px;
         color: #CCCCCC;
     }
-
-    .modalWrapper .inputsWrapper  button {
+    .modalButton {
         max-width: auto;
         height: 30px;
         margin-left: 20px;
@@ -130,30 +122,22 @@
         font-size: 13px;
         line-height: 15px;
     }
-
     .commentsWrapper {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
     }
-
-
 }
 
-
-@media (max-width: 370px) { 
-    .modalWrapper .inputsWrapper input {
+@media (max-width: 370px) {
+    .modalInput {
         max-width: auto;
-
         height: 30px;
         margin-left: 20px;
         width: 85%;
-        
-    
         border: 1px solid #CCCCCC;
         box-sizing: border-box;
         border-radius: 3px;
-    
         font-family: Roboto;
         font-style: normal;
         font-weight: normal;
@@ -161,10 +145,8 @@
         line-height: 15px;
         color: #CCCCCC;
     }
-
-    .modalWrapper .inputsWrapper  button {
+    .modalButton {
         max-width: auto;
-
         height: 30px;
         margin-left: 20px;
         width: 85%;

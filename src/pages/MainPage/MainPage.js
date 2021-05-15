@@ -30,7 +30,7 @@ const MainPage = () => {
                 {images.map((image) => {
                     return (
                         <div key={image.id}>
-                            <img src={image.url} onClick={() => dispatch(setImgId(image.id))} />
+                            <img className={styles.mainImage}src={image.url} onClick={() => dispatch(setImgId(image.id))} alt=""/>
                         </div>)
                 })}
                 <ModalPage

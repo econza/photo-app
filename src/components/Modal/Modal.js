@@ -12,6 +12,8 @@ const Modal = ({
             case 'Escape':
                 onClose()
                 break
+            default:
+                return null
         }
     }
 
