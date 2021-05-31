@@ -1,0 +1,20 @@
+footer {
+  color: #cccccc;
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-weight: 400px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 730px;
+  width: 100%;
+  border-top: 1px solid #CCCCCC;
+  flex-shrink: 0;
+}

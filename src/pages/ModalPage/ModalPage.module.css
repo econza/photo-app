@@ -1,0 +1,163 @@
+.modalWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.modalImage {
+    width: 330px;
+    height: 200px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.modalInput {
+    width: 330px;
+    height: 30px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    border: 1px solid #CCCCCC;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #CCCCCC;
+}
+
+.modalButton {
+    width: 330px;
+    height: 30px;
+    margin-top: 0px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    background: #4997D0;
+    border: none;
+    border-radius: 3px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.commentsWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.dateContainer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #999999;
+    margin-bottom: 5px;
+}
+
+.commentText {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 500px) {
+    .modalWrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .imageInfoWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .modalImage {
+        width: 100%;
+        height: auto;
+        margin-top: 0px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+    .modalInput {
+        max-width: auto;
+        height: 30px;
+        margin-left: 20px;
+        width: 90%;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+        color: #CCCCCC;
+    }
+    .modalButton {
+        max-width: auto;
+        height: 30px;
+        margin-left: 20px;
+        width: 90%;
+        background: #4997D0;
+        border: none;
+        border-radius: 3px;
+        color: #ffffff;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .commentsWrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 370px) {
+    .modalInput {
+        max-width: auto;
+        height: 30px;
+        margin-left: 20px;
+        width: 85%;
+        border: 1px solid #CCCCCC;
+        box-sizing: border-box;
+        border-radius: 3px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+        color: #CCCCCC;
+    }
+    .modalButton {
+        max-width: auto;
+        height: 30px;
+        margin-left: 20px;
+        width: 85%;
+        background: #4997D0;
+        border: none;
+        border-radius: 3px;
+        color: #ffffff;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
